@@ -1,0 +1,17 @@
+In Python we have 3 type of Inheritance
+
+1single level
+2.Multilevel
+3.Multiple
+
+
+when we wanted to Inherite one class to an another class
+we follow Structure like
+
+class parent:
+   Properties and functionality
+
+
+class child(parent):
+     child properties and aslo can access parent properties too
+     
