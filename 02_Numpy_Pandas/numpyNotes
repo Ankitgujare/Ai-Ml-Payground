@@ -1,0 +1,158 @@
+1. Store and handle data (arrays & matrices)
+
+Machine learning works with numbers in the form of vectors and matrices.
+
+Example:
+
+Student dataset
+
+Image pixels
+
+Model weights
+
+NumPy provides:
+-----------------------
+1D arrays → vectors
+
+2D arrays → matrices
+
+ND arrays → tensors
+------------------------
+Example:
+
+import numpy as np
+
+data = np.array([[25, 50000], [30, 60000], [35, 65000]])
+2. Fast mathematical calculations ⚡
+
+ML requires heavy math like:
+
+Addition
+
+Multiplication
+
+Mean
+
+Standard deviation
+
+Dot product
+
+Example:
+
+np.mean(data)
+np.std(data)
+
+Much faster than normal Python.
+
+3. Linear Algebra (VERY IMPORTANT)
+
+Machine learning is mostly linear algebra.
+
+NumPy provides:
+
+Matrix multiplication
+
+Dot product
+
+Transpose
+
+Inverse
+
+Example:
+
+np.dot(A, B)
+
+Used in:
+
+Linear Regression
+
+Neural Networks
+
+PCA
+
+Deep Learning
+
+4. Data preprocessing
+
+Before training models, data must be prepared.
+
+NumPy helps with:
+
+Normalization
+
+Scaling
+
+Reshaping
+
+Filtering
+
+Example:
+
+data.reshape(3, 2)
+5. Random number generation
+
+Used for:
+
+Weight initialization
+
+Random sampling
+
+Train-test split
+
+Example:
+
+np.random.rand(3, 3)
+6. Used by ALL ML libraries internally
+
+These libraries use NumPy:
+
+Pandas
+
+Scikit-learn
+
+TensorFlow
+
+PyTorch
+
+Keras
+
+Example:
+
+from sklearn.linear_model import LinearRegression
+
+Internally uses NumPy arrays.
+
+7. Model training calculations
+
+Example: Linear Regression formula
+
+y = wx + b
+
+NumPy calculates this efficiently.
+
+Real Machine Learning Workflow using NumPy:
+Load Data → NumPy Array → Clean Data → Train Model → Predict
+Simple example in ML:
+import numpy as np
+
+X = np.array([1, 2, 3, 4])
+y = np.array([2, 4, 6, 8])
+
+# simple calculation
+w = np.dot(X, y)
+print(w)
+Summary (Very Important)
+
+NumPy is used for:
+
+Storing data
+
+Fast math operations
+
+Linear algebra
+
+Data preprocessing
+
+Random number generation
+
+Foundation of all ML libraries
